@@ -1,0 +1,1 @@
+phantomjs libtest\phantomjs-testrunner.js file://localhost/%CD%/TestRunner.html

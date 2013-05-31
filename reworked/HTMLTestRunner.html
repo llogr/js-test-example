@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Jasmine Test Runner</title>
+  <link rel="stylesheet" type="text/css" href="libtest/jasmine/jasmine.css">
+  <script type="text/javascript" src="libtest/jasmine/jasmine.js"></script>
+  <script type="text/javascript" src="libtest/jasmine/jasmine-html.js"></script>
+  <script type="text/javascript" src="libtest/jasmine/jasmine-jquery.js"></script>
+  <script type="text/javascript" src="libtest/jasmine-reporters/console_reporter.js"></script>
+  <script type="text/javascript" src="libtest/jasmine-reporters/jasmine.teamcity_reporter.js"></script>
+  <script type="text/javascript" src="libtest/jasmine-reporters/jasmine.junit_reporter.js"></script>
+  <script type="text/javascript" src="libtest/jasmine-reporters/jasmine.terminal_reporter.js"></script>
+
+  <!-- LIBRARIES -->
+  <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+
+  <!-- SOURCE FILES -->
+  <script type="text/javascript" src="src/authenticationService.js"></script>
+  <script type="text/javascript" src="src/browser.js"></script>
+  <script type="text/javascript" src="src/loginPageLogic.js"></script>
+  <script type="text/javascript" src="src/loginPageView.js"></script>
+
+  <!-- TEST FILES -->
+  <script type="text/javascript" src="spec/loginPageLogicSpec.js"></script>
+  <script type="text/javascript" src="spec/browserDisplaySpec.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+  //Default HTML Runner
+  jasmine.getEnv().addReporter(new jasmine.HtmlReporter());
+
+  //Select the type of runner required
+  //jasmine.getEnv().addReporter(new jasmine.TeamcityReporter());
+  //jasmine.getEnv().addReporter(new jasmine.ConsoleReporter());
+  
+  //Add the trivial reporter as this is what terminates the runner script
+  //jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+
+  //Execute the runner
+  jasmine.getEnv().execute();
+</script>
+
+</body>
+</html>
+
