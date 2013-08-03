@@ -60,13 +60,13 @@ TeamCity provides the ability to integrate any test system it doesn't provide su
 
 In the `TestRunner.html` file edit the reporter that is being used by uncommenting the TeamCityReporter.
 
-`//Select the type of runner required
-jasmine.getEnv().addReporter(new jasmine.TeamcityReporter());
-//jasmine.getEnv().addReporter(new jasmine.ConsoleReporter());`
+	//Select the type of runner required
+	jasmine.getEnv().addReporter(new jasmine.TeamcityReporter());
+	//jasmine.getEnv().addReporter(new jasmine.ConsoleReporter());
 
 If you run again from the command line you will see messages in TeamCity format like:
 
-`##teamcity[testSuiteStarted name='Login Page']`
+	##teamcity[testSuiteStarted name='Login Page']
 
 All that you need to do now is configure a TeamCity configuration to execute the command line script in the same way as you would any other system process.
 
