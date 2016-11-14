@@ -40,7 +40,7 @@ With the code now nicely separated out it is possible to consider writing unit t
 
 ## Automated Tests
 
-There are now numerous testing frameworks available for JavaScript. The goal of this example was to select one that was well supported and provided the ability to run both in a browser and also headless from the command line to allow a continuous integration server to execute the tests. Jasmine (http://pivotal.github.io/jasmine/) was selected.
+There are now numerous testing frameworks available for JavaScript. The goal of this example was to select one that was well supported and provided the ability to run both in a browser and also headless from the command line to allow a continuous integration server to execute the tests. Jasmine (https://jasmine.github.io/) was selected.
 
 The tests are defined in the JavaScript files in the +Spec+ folder and to execute them you simply need to open the `HTMLTestRunner.html` file in a browser. If everything works you should see a page with a banner message that says "Passing 3 specs". The intention is not to be a Jasmine tutorial so I leave it to the reader to follow the examples on the Jasmine site.
 
